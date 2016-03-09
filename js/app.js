@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 	function fnCountAndConvertUpToNum(num) {
 
-		if (num % 1 != 0) {
+		if (num % 1 != 0 || num.indexOf(".")!=-1) {
 			$('.output').append("Please enter an integer.");
 		}
 		else {
